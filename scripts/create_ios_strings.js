@@ -102,7 +102,7 @@ function writeLocalisationFieldsToXcodeProj(filePaths, groupName, proj) {
 			if (_.isUndefined(results)) {
 				// not found in pbxFileReference yet
 				proj.addResourceFile(
-					"Resources/" + path,
+					"App/Resources/" + path,
 					{ variantGroup: true },
 					groupKey
 				);
